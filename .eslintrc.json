@@ -30,7 +30,6 @@
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "no-console": "off",
-    "react/prop-types": [2, { "ignore": ["children"] }]
+    "no-console": "off"
   }
 }
