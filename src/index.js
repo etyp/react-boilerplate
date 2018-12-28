@@ -4,6 +4,7 @@ import '@babel/polyfill';
 import App from './App';
 import DefaultErrorBoundary from './DefaultErrorBoundary';
 import './styles.css';
+import './base.less';
 
 if (process.env.NODE_ENV === 'development') {
   const axe = require('react-axe');

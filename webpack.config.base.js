@@ -20,6 +20,12 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
         exclude: /node_modules/,
       },
+      {
+        test: /\.less$/,
+        // Array of loaders
+        use: ['style-loader', 'css-loader', 'less-loader'],
+        exclude: /node_modules/,
+      },
     ],
   },
   plugins: [
