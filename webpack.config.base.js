@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'app.bundle.js', 
+    filename: 'app.bundle.js',
   },
   module: {
     rules: [
@@ -22,7 +22,9 @@ module.exports = {
       },
     ],
   },
-  plugins: [new HtmlWebpackPlugin({
-    template: './src/index.html',
-  })],
-}
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+    }),
+  ],
+};

@@ -4,11 +4,13 @@ const baseConfig = require('./webpack.config.base');
 
 module.exports = merge(baseConfig, {
   mode: 'production',
-  plugins: [new BundleAnalyzerPlugin({
-    analyzerMode: 'static',
-    openAnalyzer: false,
-    reportFilename: 'bundle-sizes.html',
-  })],
+  plugins: [
+    new BundleAnalyzerPlugin({
+      analyzerMode: 'static',
+      openAnalyzer: false,
+      reportFilename: 'bundle-sizes.html',
+    }),
+  ],
   externals: {
     react: 'React',
     'react-dom': 'ReactDOM',
