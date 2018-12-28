@@ -18,6 +18,12 @@ module.exports = {
           plugins: ['@babel/plugin-proposal-class-properties'],
         },
       },
+      {
+        test: /\.css$/,
+        // Array of loaders
+        use: ['style-loader', 'css-loader'],
+        exclude: /node_modules/,
+      }
     ],
   },
   plugins: [new HtmlWebpackPlugin({
